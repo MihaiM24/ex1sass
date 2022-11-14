@@ -1,1 +1,49 @@
-
+$color-primary: red;
+$color-secondary: blue;
+$color-tertiary: green;
+.bigbox{
+    border: 2px solid $color-primary;
+    display:flex;
+    flex-direction: column;
+}
+.title{
+    color: $color-tertiary;
+    text-decoration: underline $color-secondary 2px;
+    align-self: center;
+}
+.boxes{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid $color-tertiary;
+    margin: 15px;
+}
+.box1{
+    border-right: 2px solid $color-tertiary;
+    padding: 10px;
+    p{
+        color: $color-secondary;
+    }
+}
+.box2{
+    border-right: 2px solid $color-tertiary;
+    padding: 10px;
+    border-left: 1px solid $color-tertiary;
+    p{
+        color: $color-primary;
+    }
+}
+.box3{
+    border-right: 2px solid $color-tertiary;
+    padding: 10px;
+    border-left: 1px solid $color-tertiary;
+    p{
+        color: $color-secondary;
+    }
+}
+.box4{
+    padding: 10px;
+    border-left: 1px solid $color-tertiary;
+    p{
+        color: $color-primary;
+    }
+}
